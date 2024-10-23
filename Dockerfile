@@ -1,7 +1,7 @@
 FROM python:3.10-slim
 RUN apt-get update && apt-get install -y python3-venv
 
-WORKDIR /app
+WORKDIR /win_bot
 
 COPY ./requirements.txt .
 
