@@ -6,7 +6,7 @@ from aiogram.filters import CommandStart, Command
 from aiogram.fsm.context import FSMContext
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from bot.config import BASE_DIR
+from config import BASE_DIR
 from database.orm_query import *
 from utils.buttons import *
 from utils.states import States

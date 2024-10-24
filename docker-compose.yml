@@ -1,0 +1,21 @@
+  version: "3.9"
+
+  services:
+   bot:
+    build: .
+    ports:
+     - "8000:8000"
+    env_file:
+     - .env
+    command: ["python", "bot/main.py"]
+
+   app:
+    build: .
+    depends_on:
+     - bot
+    ports:
+     - "5000:5000" 
+    environment:
+     - FLASK_ENV=production # Отключаем режим отладки
+     - FLASK_APP=app.main # Указываем файл с маршрутами Flask
+    command: ["/run-app.sh"]

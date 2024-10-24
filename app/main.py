@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 
-from app.database import database
+from database import db
+
 
 app = Flask(__name__)
 
@@ -19,7 +20,7 @@ def postback():
     except Exception as e:
         return jsonify(msg="Wrong user_id. Must be Number")
 
-    cur, con = database()
+    cur, con = db()
 
     try:
         con.execute("INSERT INTO win_users (user_id) VALUES (?)", (user_id, ))
@@ -35,4 +36,4 @@ def postback():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, )
+    app.run(host='0.0.0.0', port="5000")

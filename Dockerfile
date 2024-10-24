@@ -1,12 +1,19 @@
 FROM python:3.10-slim
-RUN apt-get update && apt-get install -y python3-venv
 
 WORKDIR /win_bot
 
-COPY ./requirements.txt .
-
+# Create virtual environment
 RUN python3 -m venv .venv
-RUN . .venv/bin/activate && pip install --upgrade pip && pip install -r requirements.txt
 
-COPY . .
-CMD ["/bin/bash", "-c", ". .venv/bin/activate && python3 bot/main.py"]
+# Activate virtual environment
+ENV PATH="/win_bot/.venv/bin:$PATH"
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY bot/ bot/
+COPY app/ app/
+COPY run-app.sh /
+RUN chmod +x /run-app.sh
+
+

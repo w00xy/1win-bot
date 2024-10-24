@@ -6,7 +6,7 @@ from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 from aiogram.types import BotCommandScopeAllPrivateChats
 
-from bot.config import BOT_TOKEN
+from config import BOT_TOKEN
 from database.engine import session_maker, create_db, drop_db
 from handlers.handlers import routers
 from middlewares.db import DataBaseSession
