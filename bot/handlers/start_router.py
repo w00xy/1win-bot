@@ -7,7 +7,9 @@ from aiogram import Router, types, F
 from aiogram.filters import CommandStart, Command
 from aiogram.fsm.context import FSMContext
 from sqlalchemy.ext.asyncio import AsyncSession
+from aiogram.enums import ParseMode
 
+from utils.extra import get_start
 from config import BASE_DIR
 from database.orm_query import *
 from utils.buttons import *
@@ -24,16 +26,14 @@ async def start_bot(message: types.Message, session: AsyncSession, state: FSMCon
     except:
         pass
     
-    photo_path = os.path.join(BASE_DIR, "utils", "images", "win_id.jpg")
+    win_id = await orm_check_id(session, message.from_user.id)
+    print(win_id)
+    if win_id:
+        await get_start(message, state, registered_btns)
+        return
     
-    await message.answer_photo(
-        photo=types.FSInputFile(path=photo_path),
-        caption=start_text,
-        reply_markup=start_buttons
-    )
+    await get_start(message, state, start_buttons)
 
-    await state.set_state(States.WIN_REGISTRATION)
-    
     
 @start_router.message(States.WIN_REGISTRATION, F.text)
 async def win_registration_bot(message: types.Message, session: AsyncSession, state: FSMContext):
@@ -63,14 +63,15 @@ async def win_registration_bot(message: types.Message, session: AsyncSession, st
     
 
 @start_router.callback_query(F.data == "instruction")
-async def instucrion_handler(callback: types.CallbackQuery):
-
-    photo = types.FSInputFile(os.path.join(BASE_DIR, "..", "images", "instruction.jpg"))
+async def instucrion_handler(callback: types.CallbackQuery, session: AsyncSession, state: FSMContext):
+    await state.clear()
+    
+    photo = types.FSInputFile(os.path.join(BASE_DIR, "utils", "images", "instruction.jpg"))
 
     try:
         await callback.message.delete()
     except:
         pass
 
-    await callback.message.answer_photo(photo, instruction_text, reply_markup=get_signal_buttons, parse_mode=)
+    await callback.message.answer_photo(photo, instruction_text, reply_markup=get_signal_buttons, parse_mode=ParseMode.HTML)
     

@@ -1,29 +1,43 @@
+import datetime
+import json
+from sqlite3 import IntegrityError
 from typing import List, Tuple
 
 from sqlalchemy import select, delete, insert, update
+import sqlalchemy
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from database.models import User, WinUser
 
 
 
-async def orm_add_user(session: AsyncSession, user_id: int,):
-    try:
-        # Проверяем, существует ли уже такой пользователь
-        result = await session.execute(select(User).filter(User.user_id == user_id))
-        existing_user = result.scalar_one_or_none()
+async def orm_add_user(session: AsyncSession, user_id: int):
+  """Adds a new user to the database if they don't already exist.
 
-        if existing_user is None:
-            # Если пользователь не существует, вставляем новую запись
-            await session.execute(insert(User).values(user_id=user_id))
-            await session.commit()
-            print(f"Пользователь {user_id} успешно добавлен")
-        else:
-            print(f"Пользователь {user_id} уже существует.")
-    except Exception as e:
-        # Обработка ошибок и откат транзакции
-        await session.rollback()
-        print(f"Ошибка: {e}")
+  Args:
+  session: Database session.
+  user_id: User ID.
+  """
+  try:
+    # Проверка, существует ли пользователь в базе данных
+    result = await session.execute(select(User).where(User.user_id == user_id))
+    user = result.scalars().first()
+
+    if user is not None:
+      # Пользователь уже существует, поэтому возвращаем без изменений
+      return
+    
+    # Если пользователь не найден, создаем нового
+    new_user = User(user_id=user_id)
+    new_user.sent_images = json.dumps(new_user.sent_images)
+    new_user.last_send_time = datetime.datetime.now()
+    session.add(new_user)
+    await session.commit()
+
+  except Exception as e:
+    # Обработка любых других ошибок SQLAlchemy
+    print(f"An error occurred: {e}")
+    await session.rollback()
 
 
 async def orm_search_win_id(session: AsyncSession, user_id: int, win_id: int):
@@ -57,6 +71,50 @@ async def orm_search_win_id(session: AsyncSession, user_id: int, win_id: int):
     else:
         # win_id not found in winusers
         return False
+    
+
+async def orm_check_id(session: AsyncSession, user_id: int):
+    query = select(User.win_id).filter(User.user_id == user_id)
+    result = await session.execute(query)
+    win_user = result.scalar_one_or_none()
+    return win_user
+
+
+async def orm_user_data(session: AsyncSession, user_id: int):
+    query = select(User.last_send_time, User.sent_images).where(User.user_id == user_id)
+
+    try:
+        result = await session.execute(query)
+        user_data = result.all()
+        print(f"ORM - USER_DATA - ", user_data)
+        if user_data is not None:
+            (last_sent_time, sent_images) = user_data[0]
+            # Handle the case where sent_images might be None
+            if sent_images is not None:
+                sent_images = json.loads(sent_images) # Decode only if not None
+            else:
+                sent_images = [] # Initialize as an empty list if None
+        else:
+            last_sent_time = datetime.datetime.now() - datetime.timedelta(seconds=30)
+            sent_images = [] # Initialize as an empty list if no user found
+        return last_sent_time, sent_images
+    except sqlalchemy.exc.NoResultFound:
+        print(f"No user found with id: {user_id}")
+        return None, None
+    except Exception as e:
+        print(f"An error occurred during data retrieval: {e}")
+        return datetime.datetime.now() - datetime.timedelta(seconds=30), []
+
+
+
+async def orm_update_data(session: AsyncSession, user_id: int, last_sent_time: datetime.datetime, sent_images):
+    query = update(User).where(User.user_id == user_id).values(
+        last_send_time = last_sent_time,
+        sent_images = sent_images
+    )
+    await session.execute(query)
+    await session.commit()
+    
     
 
 # async def orm_save_message(session: AsyncSession, user_id: int, role: str, message: str, tokens: int):
