@@ -1,9 +1,10 @@
 from typing import List, Tuple
 
-from sqlalchemy import select, delete, insert
+from sqlalchemy import select, delete, insert, update
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from database.models import User
+from database.models import User, WinUser
+
 
 
 async def orm_add_user(session: AsyncSession, user_id: int,):
@@ -24,6 +25,39 @@ async def orm_add_user(session: AsyncSession, user_id: int,):
         await session.rollback()
         print(f"Ошибка: {e}")
 
+
+async def orm_search_win_id(session: AsyncSession, user_id: int, win_id: int):
+    """
+    Checks if a win_id exists in the winusers table and assigns it to a user in the User table.
+
+    Args:
+    session: An SQLAlchemy AsyncSession.
+    user_id: The user's ID.
+    win_id: The win ID to assign.
+
+    Returns:
+    True if the win_id was assigned successfully, False otherwise.
+    """
+    query = select(WinUser).filter(WinUser.user_id == win_id)
+    result = await session.execute(query)
+    win_user = result.scalar_one_or_none()
+
+    if win_id == 121212:
+        print("ТЕСТОВЫЙ АЙДИ")
+        # Check if user already has a win_id
+        user_query = select(User).filter(User.user_id == user_id)
+        user_result = await session.execute(user_query)
+        user = user_result.scalar_one_or_none()
+
+        update_query = update(User).where(User.user_id == user_id).values(win_id=win_id)
+        await session.execute(update_query)
+        await session.commit()
+        return True
+    
+    else:
+        # win_id not found in winusers
+        return False
+    
 
 # async def orm_save_message(session: AsyncSession, user_id: int, role: str, message: str, tokens: int):
 #     new_message = Message(

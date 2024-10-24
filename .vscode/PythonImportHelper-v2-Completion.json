@@ -42,6 +42,14 @@
         "documentation": {}
     },
     {
+        "label": "REF_URL",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
         "label": "BOT_TOKEN",
         "importPath": "config",
         "description": "config",
@@ -186,6 +194,14 @@
         "documentation": {}
     },
     {
+        "label": "update",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "context",
         "importPath": "alembic",
         "description": "alembic",
@@ -259,6 +275,14 @@
     },
     {
         "label": "User",
+        "importPath": "database.models",
+        "description": "database.models",
+        "isExtraImport": true,
+        "detail": "database.models",
+        "documentation": {}
+    },
+    {
+        "label": "WinUser",
         "importPath": "database.models",
         "description": "database.models",
         "isExtraImport": true,
@@ -371,6 +395,80 @@
         "documentation": {}
     },
     {
+        "label": "aiogram.enums",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "aiogram.enums",
+        "description": "aiogram.enums",
+        "detail": "aiogram.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ParseMode",
+        "importPath": "aiogram.enums",
+        "description": "aiogram.enums",
+        "isExtraImport": true,
+        "detail": "aiogram.enums",
+        "documentation": {}
+    },
+    {
+        "label": "aiogram.types",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "InlineKeyboardButton",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "KeyboardButton",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "Message",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "TelegramObject",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "BotCommand",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "BotCommandScopeAllPrivateChats",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
         "label": "Router",
         "importPath": "aiogram",
         "description": "aiogram",
@@ -388,6 +486,14 @@
     },
     {
         "label": "F",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "ParseMode",
         "importPath": "aiogram",
         "description": "aiogram",
         "isExtraImport": true,
@@ -475,54 +581,6 @@
         "documentation": {}
     },
     {
-        "label": "InlineKeyboardButton",
-        "importPath": "aiogram.types",
-        "description": "aiogram.types",
-        "isExtraImport": true,
-        "detail": "aiogram.types",
-        "documentation": {}
-    },
-    {
-        "label": "KeyboardButton",
-        "importPath": "aiogram.types",
-        "description": "aiogram.types",
-        "isExtraImport": true,
-        "detail": "aiogram.types",
-        "documentation": {}
-    },
-    {
-        "label": "Message",
-        "importPath": "aiogram.types",
-        "description": "aiogram.types",
-        "isExtraImport": true,
-        "detail": "aiogram.types",
-        "documentation": {}
-    },
-    {
-        "label": "TelegramObject",
-        "importPath": "aiogram.types",
-        "description": "aiogram.types",
-        "isExtraImport": true,
-        "detail": "aiogram.types",
-        "documentation": {}
-    },
-    {
-        "label": "BotCommand",
-        "importPath": "aiogram.types",
-        "description": "aiogram.types",
-        "isExtraImport": true,
-        "detail": "aiogram.types",
-        "documentation": {}
-    },
-    {
-        "label": "BotCommandScopeAllPrivateChats",
-        "importPath": "aiogram.types",
-        "description": "aiogram.types",
-        "isExtraImport": true,
-        "detail": "aiogram.types",
-        "documentation": {}
-    },
-    {
         "label": "InlineKeyboardBuilder",
         "importPath": "aiogram.utils.keyboard",
         "description": "aiogram.utils.keyboard",
@@ -602,14 +660,6 @@
         "description": "aiogram.client.default",
         "isExtraImport": true,
         "detail": "aiogram.client.default",
-        "documentation": {}
-    },
-    {
-        "label": "ParseMode",
-        "importPath": "aiogram.enums",
-        "description": "aiogram.enums",
-        "isExtraImport": true,
-        "detail": "aiogram.enums",
         "documentation": {}
     },
     {
@@ -773,7 +823,7 @@
         "kind": 6,
         "importPath": "bot.database.models",
         "description": "bot.database.models",
-        "peekOfCode": "class Base(DeclarativeBase):\n    pass\nclass User(Base):\n    __tablename__ = 'users'\n    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)\n    user_id: Mapped[int] = mapped_column(BigInteger, nullable=False, unique=True)\n    win_id: Mapped[int] = mapped_column(BigInteger, nullable=True, default=None)\n    is_active: Mapped[bool] = mapped_column(Boolean, nullable=False, default=True)\nclass winUser(Base):\n    __tablename__ = \"win_users\"",
+        "peekOfCode": "class Base(DeclarativeBase):\n    pass\nclass User(Base):\n    __tablename__ = 'users'\n    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)\n    user_id: Mapped[int] = mapped_column(BigInteger, nullable=False, unique=True)\n    win_id: Mapped[int] = mapped_column(BigInteger, nullable=True, default=None)\n    is_active: Mapped[bool] = mapped_column(Boolean, nullable=False, default=True)\nclass WinUser(Base):\n    __tablename__ = \"win_users\"",
         "detail": "bot.database.models",
         "documentation": {}
     },
@@ -782,16 +832,16 @@
         "kind": 6,
         "importPath": "bot.database.models",
         "description": "bot.database.models",
-        "peekOfCode": "class User(Base):\n    __tablename__ = 'users'\n    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)\n    user_id: Mapped[int] = mapped_column(BigInteger, nullable=False, unique=True)\n    win_id: Mapped[int] = mapped_column(BigInteger, nullable=True, default=None)\n    is_active: Mapped[bool] = mapped_column(Boolean, nullable=False, default=True)\nclass winUser(Base):\n    __tablename__ = \"win_users\"\n    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)\n    user_id: Mapped[int] = mapped_column(BigInteger, nullable=False, unique=True)",
+        "peekOfCode": "class User(Base):\n    __tablename__ = 'users'\n    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)\n    user_id: Mapped[int] = mapped_column(BigInteger, nullable=False, unique=True)\n    win_id: Mapped[int] = mapped_column(BigInteger, nullable=True, default=None)\n    is_active: Mapped[bool] = mapped_column(Boolean, nullable=False, default=True)\nclass WinUser(Base):\n    __tablename__ = \"win_users\"\n    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)\n    user_id: Mapped[int] = mapped_column(BigInteger, nullable=False, unique=True)",
         "detail": "bot.database.models",
         "documentation": {}
     },
     {
-        "label": "winUser",
+        "label": "WinUser",
         "kind": 6,
         "importPath": "bot.database.models",
         "description": "bot.database.models",
-        "peekOfCode": "class winUser(Base):\n    __tablename__ = \"win_users\"\n    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)\n    user_id: Mapped[int] = mapped_column(BigInteger, nullable=False, unique=True)",
+        "peekOfCode": "class WinUser(Base):\n    __tablename__ = \"win_users\"\n    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)\n    user_id: Mapped[int] = mapped_column(BigInteger, nullable=False, unique=True)",
         "detail": "bot.database.models",
         "documentation": {}
     },
@@ -872,7 +922,25 @@
         "kind": 5,
         "importPath": "bot.utils.buttons",
         "description": "bot.utils.buttons",
-        "peekOfCode": "start_buttons = get_url_btns(\n    btns={\n        \"💻 Зарегистрироваться\": \"https://1wimdx.life/casino/list/4?p=306v\",\n    }\n)",
+        "peekOfCode": "start_buttons = get_url_btns(\n    btns={\n        \"💻 Зарегистрироваться\": \"https://1wimdx.life/casino/list/4?p=306v\",\n    }\n)\nsuccess_reg_buttons = get_callback_btns(\n    btns={\n        \"📚Инструкция\": \"instruction\",\n        \"Получить сигнал💣\": \"get_signal\",\n        \"🔙Вернуться в главное меню\": \"back\",",
+        "detail": "bot.utils.buttons",
+        "documentation": {}
+    },
+    {
+        "label": "success_reg_buttons",
+        "kind": 5,
+        "importPath": "bot.utils.buttons",
+        "description": "bot.utils.buttons",
+        "peekOfCode": "success_reg_buttons = get_callback_btns(\n    btns={\n        \"📚Инструкция\": \"instruction\",\n        \"Получить сигнал💣\": \"get_signal\",\n        \"🔙Вернуться в главное меню\": \"back\",\n    }\n)\nget_signal_buttons = get_callback_btns(\n    btns={\n        \"Получить сигнал💣\": \"get_signal\",",
+        "detail": "bot.utils.buttons",
+        "documentation": {}
+    },
+    {
+        "label": "get_signal_buttons",
+        "kind": 5,
+        "importPath": "bot.utils.buttons",
+        "description": "bot.utils.buttons",
+        "peekOfCode": "get_signal_buttons = get_callback_btns(\n    btns={\n        \"Получить сигнал💣\": \"get_signal\",\n        \"🔙Вернуться в главное меню\": \"back\",\n    }\n)",
         "detail": "bot.utils.buttons",
         "documentation": {}
     },
@@ -890,7 +958,25 @@
         "kind": 5,
         "importPath": "bot.utils.texts",
         "description": "bot.utils.texts",
-        "peekOfCode": "start_text = (\n    f\"*Добро пожаловать в ISF Signal🚀*\\n\\n\"\n    f\"🔷 1. Для начала зарегистрируйтесь по ссылке на сайте 1WIN [CLICK](https://1wimdx.life/casino/list/4?p=306v)\\n\"\n    f\"🔷 2. После успешной регистрации cкопируйте ваш айди на сайте (Вкладка 'пополнение' и в правом верхнем углу будет ваш ID).\\n\"\n    f\"🔷 3. И отправьте его боту в ответ на это сообщение!\\n\\n\"\n    f\"`Наш бот основан на нейросети от OpenAI. Он может предугадать расположение звёзд с вероятностью 85%.`\"\n)\nasync def no_reg_text(user_id):\n    return (\n        f\"ID не найден. Пожалуйста, введите ID еще раз:\"",
+        "peekOfCode": "start_text = (\n    f\"*Добро пожаловать в ISF Signal🚀*\\n\\n\"\n    f\"🔷 1. Для начала зарегистрируйтесь по ссылке на сайте 1WIN [CLICK](https://1wimdx.life/casino/list/4?p=306v)\\n\"\n    f\"🔷 2. После успешной регистрации cкопируйте ваш айди на сайте (Вкладка 'пополнение' и в правом верхнем углу будет ваш ID).\\n\"\n    f\"🔷 3. И отправьте его боту в ответ на это сообщение!\\n\\n\"\n    f\"`Наш бот основан на нейросети от OpenAI. Он может предугадать расположение звёзд с вероятностью 85%.`\"\n)\nasync def no_reg_text(user_id):\n    return (\n        f\"{user_id} ID не найден. Пожалуйста, введите ID еще раз:\"",
+        "detail": "bot.utils.texts",
+        "documentation": {}
+    },
+    {
+        "label": "success_reg_text",
+        "kind": 5,
+        "importPath": "bot.utils.texts",
+        "description": "bot.utils.texts",
+        "peekOfCode": "success_reg_text = (\n    f\"Вы успешно прошли регистрацию✅\\n\\n\"\n)\ninstruction_text = (\n    f\"\"\"\n    Бот основан и обучен на кластере нейросети 🖥.\n    Для тренировки бота было сыграно 🎰10.000+ игр.\n    В данный момент пользователи бота успешно делают в день 15-25% от своего 💸 капитала!\n    <code>На текущий момент бот по сей день проходит проверки и  исправления! Точность бота составляет 92%!</code>\n    Для получения максимального профита следуйте следующей инструкции:",
+        "detail": "bot.utils.texts",
+        "documentation": {}
+    },
+    {
+        "label": "instruction_text",
+        "kind": 5,
+        "importPath": "bot.utils.texts",
+        "description": "bot.utils.texts",
+        "peekOfCode": "instruction_text = (\n    f\"\"\"\n    Бот основан и обучен на кластере нейросети 🖥.\n    Для тренировки бота было сыграно 🎰10.000+ игр.\n    В данный момент пользователи бота успешно делают в день 15-25% от своего 💸 капитала!\n    <code>На текущий момент бот по сей день проходит проверки и  исправления! Точность бота составляет 92%!</code>\n    Для получения максимального профита следуйте следующей инструкции:\n    🟢 1. Пройти регистрацию в букмекерской конторе <a href=\"{REF_URL}\">1WIN</a>\n    Если не открывается - заходим с включенным VPN (Швеция). В Play Market/App Store полно бесплатных сервисов, например: Vpnify, Planet VPN, Hotspot VPN и так далее!\n    <code>Без регистрации по промокоду kanfilud доступ к сигналам не будет открыт!</code>",
         "detail": "bot.utils.texts",
         "documentation": {}
     },
@@ -899,7 +985,7 @@
         "kind": 5,
         "importPath": "bot.config",
         "description": "bot.config",
-        "peekOfCode": "BASE_DIR = os.path.dirname(os.path.abspath(__file__))\nDB_LITE = f\"sqlite+aiosqlite:///{os.path.join(BASE_DIR, '..', 'users.db')}\"\nBOT_TOKEN = os.getenv(\"BOT_TOKEN\")",
+        "peekOfCode": "BASE_DIR = os.path.dirname(os.path.abspath(__file__))\nDB_LITE = f\"sqlite+aiosqlite:///{os.path.join(BASE_DIR, '..', 'users.db')}\"\nBOT_TOKEN = os.getenv(\"BOT_TOKEN\")\nREF_URL = \"https://1wimdx.life/casino/list/4?p=306v\"",
         "detail": "bot.config",
         "documentation": {}
     },
@@ -908,7 +994,7 @@
         "kind": 5,
         "importPath": "bot.config",
         "description": "bot.config",
-        "peekOfCode": "DB_LITE = f\"sqlite+aiosqlite:///{os.path.join(BASE_DIR, '..', 'users.db')}\"\nBOT_TOKEN = os.getenv(\"BOT_TOKEN\")",
+        "peekOfCode": "DB_LITE = f\"sqlite+aiosqlite:///{os.path.join(BASE_DIR, '..', 'users.db')}\"\nBOT_TOKEN = os.getenv(\"BOT_TOKEN\")\nREF_URL = \"https://1wimdx.life/casino/list/4?p=306v\"",
         "detail": "bot.config",
         "documentation": {}
     },
@@ -917,7 +1003,16 @@
         "kind": 5,
         "importPath": "bot.config",
         "description": "bot.config",
-        "peekOfCode": "BOT_TOKEN = os.getenv(\"BOT_TOKEN\")",
+        "peekOfCode": "BOT_TOKEN = os.getenv(\"BOT_TOKEN\")\nREF_URL = \"https://1wimdx.life/casino/list/4?p=306v\"",
+        "detail": "bot.config",
+        "documentation": {}
+    },
+    {
+        "label": "REF_URL",
+        "kind": 5,
+        "importPath": "bot.config",
+        "description": "bot.config",
+        "peekOfCode": "REF_URL = \"https://1wimdx.life/casino/list/4?p=306v\"",
         "detail": "bot.config",
         "documentation": {}
     },

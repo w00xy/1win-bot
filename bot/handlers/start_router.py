@@ -1,3 +1,5 @@
+import aiogram.enums
+import aiogram.types
 import os
 from typing import Union
 
@@ -35,8 +37,40 @@ async def start_bot(message: types.Message, session: AsyncSession, state: FSMCon
     
 @start_router.message(States.WIN_REGISTRATION, F.text)
 async def win_registration_bot(message: types.Message, session: AsyncSession, state: FSMContext):
+    
+    win_id = message.text
+    
+    try:
+        win_id = int(win_id)
+    except ValueError:
+        await message.answer("Please enter a valid ID (numbers only).")
+        return
+    
+    
+    result = await orm_search_win_id(session, message.from_user.id, win_id)     
+    
+    if result:
+        await message.delete()
+        await message.answer(
+            text=success_reg_text,
+            reply_markup=success_reg_buttons,
+        )
+        return
+    
     await message.answer(
-        text=no_reg_text,
+        text=await no_reg_text(message.text),
     )
     
+
+@start_router.callback_query(F.data == "instruction")
+async def instucrion_handler(callback: types.CallbackQuery):
+
+    photo = types.FSInputFile(os.path.join(BASE_DIR, "..", "images", "instruction.jpg"))
+
+    try:
+        await callback.message.delete()
+    except:
+        pass
+
+    await callback.message.answer_photo(photo, instruction_text, reply_markup=get_signal_buttons, parse_mode=)
     

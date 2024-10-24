@@ -17,7 +17,7 @@ class User(Base):
     is_active: Mapped[bool] = mapped_column(Boolean, nullable=False, default=True)
 
 
-class winUser(Base):
+class WinUser(Base):
     __tablename__ = "win_users"
     
     id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
