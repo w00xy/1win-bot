@@ -1,0 +1,941 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "find_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "find_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "sqlite3",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sqlite3",
+        "description": "sqlite3",
+        "detail": "sqlite3",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "importPath": "app.config",
+        "description": "app.config",
+        "isExtraImport": true,
+        "detail": "app.config",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "database",
+        "importPath": "app.database",
+        "description": "app.database",
+        "isExtraImport": true,
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "fileConfig",
+        "importPath": "logging.config",
+        "description": "logging.config",
+        "isExtraImport": true,
+        "detail": "logging.config",
+        "documentation": {}
+    },
+    {
+        "label": "engine_from_config",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "pool",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "BigInteger",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "DateTime",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Text",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Boolean",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "select",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "delete",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "insert",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "context",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "bot.database.models",
+        "description": "bot.database.models",
+        "isExtraImport": true,
+        "detail": "bot.database.models",
+        "documentation": {}
+    },
+    {
+        "label": "create_async_engine",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "async_sessionmaker",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSession",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSession",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSession",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "async_sessionmaker",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "database.models",
+        "description": "database.models",
+        "isExtraImport": true,
+        "detail": "database.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "database.models",
+        "description": "database.models",
+        "isExtraImport": true,
+        "detail": "database.models",
+        "documentation": {}
+    },
+    {
+        "label": "DB_LITE",
+        "importPath": "bot.config",
+        "description": "bot.config",
+        "isExtraImport": true,
+        "detail": "bot.config",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "importPath": "bot.config",
+        "description": "bot.config",
+        "isExtraImport": true,
+        "detail": "bot.config",
+        "documentation": {}
+    },
+    {
+        "label": "BOT_TOKEN",
+        "importPath": "bot.config",
+        "description": "bot.config",
+        "isExtraImport": true,
+        "detail": "bot.config",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "DeclarativeBase",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Mapped",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "mapped_column",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Awaitable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Callable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "start_router",
+        "importPath": "handlers.start_router",
+        "description": "handlers.start_router",
+        "isExtraImport": true,
+        "detail": "handlers.start_router",
+        "documentation": {}
+    },
+    {
+        "label": "Router",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "types",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "F",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "BaseMiddleware",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "Bot",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "Dispatcher",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "CommandStart",
+        "importPath": "aiogram.filters",
+        "description": "aiogram.filters",
+        "isExtraImport": true,
+        "detail": "aiogram.filters",
+        "documentation": {}
+    },
+    {
+        "label": "Command",
+        "importPath": "aiogram.filters",
+        "description": "aiogram.filters",
+        "isExtraImport": true,
+        "detail": "aiogram.filters",
+        "documentation": {}
+    },
+    {
+        "label": "FSMContext",
+        "importPath": "aiogram.fsm.context",
+        "description": "aiogram.fsm.context",
+        "isExtraImport": true,
+        "detail": "aiogram.fsm.context",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "database.orm_query",
+        "description": "database.orm_query",
+        "isExtraImport": true,
+        "detail": "database.orm_query",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "utils.buttons",
+        "description": "utils.buttons",
+        "isExtraImport": true,
+        "detail": "utils.buttons",
+        "documentation": {}
+    },
+    {
+        "label": "States",
+        "importPath": "utils.states",
+        "description": "utils.states",
+        "isExtraImport": true,
+        "detail": "utils.states",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "utils.texts",
+        "description": "utils.texts",
+        "isExtraImport": true,
+        "detail": "utils.texts",
+        "documentation": {}
+    },
+    {
+        "label": "InlineKeyboardButton",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "KeyboardButton",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "Message",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "TelegramObject",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "BotCommand",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "BotCommandScopeAllPrivateChats",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "InlineKeyboardBuilder",
+        "importPath": "aiogram.utils.keyboard",
+        "description": "aiogram.utils.keyboard",
+        "isExtraImport": true,
+        "detail": "aiogram.utils.keyboard",
+        "documentation": {}
+    },
+    {
+        "label": "ReplyKeyboardBuilder",
+        "importPath": "aiogram.utils.keyboard",
+        "description": "aiogram.utils.keyboard",
+        "isExtraImport": true,
+        "detail": "aiogram.utils.keyboard",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "kbds.inline",
+        "description": "kbds.inline",
+        "isExtraImport": true,
+        "detail": "kbds.inline",
+        "documentation": {}
+    },
+    {
+        "label": "State",
+        "importPath": "aiogram.fsm.state",
+        "description": "aiogram.fsm.state",
+        "isExtraImport": true,
+        "detail": "aiogram.fsm.state",
+        "documentation": {}
+    },
+    {
+        "label": "StatesGroup",
+        "importPath": "aiogram.fsm.state",
+        "description": "aiogram.fsm.state",
+        "isExtraImport": true,
+        "detail": "aiogram.fsm.state",
+        "documentation": {}
+    },
+    {
+        "label": "asyncio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncio",
+        "description": "asyncio",
+        "detail": "asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "DefaultBotProperties",
+        "importPath": "aiogram.client.default",
+        "description": "aiogram.client.default",
+        "isExtraImport": true,
+        "detail": "aiogram.client.default",
+        "documentation": {}
+    },
+    {
+        "label": "ParseMode",
+        "importPath": "aiogram.enums",
+        "description": "aiogram.enums",
+        "isExtraImport": true,
+        "detail": "aiogram.enums",
+        "documentation": {}
+    },
+    {
+        "label": "session_maker",
+        "importPath": "database.engine",
+        "description": "database.engine",
+        "isExtraImport": true,
+        "detail": "database.engine",
+        "documentation": {}
+    },
+    {
+        "label": "create_db",
+        "importPath": "database.engine",
+        "description": "database.engine",
+        "isExtraImport": true,
+        "detail": "database.engine",
+        "documentation": {}
+    },
+    {
+        "label": "drop_db",
+        "importPath": "database.engine",
+        "description": "database.engine",
+        "isExtraImport": true,
+        "detail": "database.engine",
+        "documentation": {}
+    },
+    {
+        "label": "routers",
+        "importPath": "handlers.handlers",
+        "description": "handlers.handlers",
+        "isExtraImport": true,
+        "detail": "handlers.handlers",
+        "documentation": {}
+    },
+    {
+        "label": "DataBaseSession",
+        "importPath": "middlewares.db",
+        "description": "middlewares.db",
+        "isExtraImport": true,
+        "detail": "middlewares.db",
+        "documentation": {}
+    },
+    {
+        "label": "command_list",
+        "importPath": "utils.bot_commands",
+        "description": "utils.bot_commands",
+        "isExtraImport": true,
+        "detail": "utils.bot_commands",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "app.config",
+        "description": "app.config",
+        "peekOfCode": "BASE_DIR = os.path.dirname(os.path.abspath(__file__))\nDB_LITE = f\"sqlite+aiosqlite:///{os.path.join(BASE_DIR, '..', 'users.db')}\"",
+        "detail": "app.config",
+        "documentation": {}
+    },
+    {
+        "label": "DB_LITE",
+        "kind": 5,
+        "importPath": "app.config",
+        "description": "app.config",
+        "peekOfCode": "DB_LITE = f\"sqlite+aiosqlite:///{os.path.join(BASE_DIR, '..', 'users.db')}\"",
+        "detail": "app.config",
+        "documentation": {}
+    },
+    {
+        "label": "database",
+        "kind": 2,
+        "importPath": "app.database",
+        "description": "app.database",
+        "peekOfCode": "def database():\n    db_path = os.path.join(BASE_DIR, \"..\", \"users.db\")\n    con = sqlite3.connect(db_path)\n    cur = con.cursor()\n    return cur, con",
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "postback",
+        "kind": 2,
+        "importPath": "app.routes",
+        "description": "app.routes",
+        "peekOfCode": "def postback():\n    data = request.get_json()\n    print(data)\n    if \"user_id\" not in data:\n        return jsonify(msg=\"Missing user_id\"), 400\n    user_id = data[\"user_id\"]\n    try:\n        int(user_id)\n    except Exception as e:\n        return jsonify(msg=\"Wrong user_id. Must be Number\")",
+        "detail": "app.routes",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app.routes",
+        "description": "app.routes",
+        "peekOfCode": "app = Flask(__name__)\n@app.route('/postback', methods=['POST'])\ndef postback():\n    data = request.get_json()\n    print(data)\n    if \"user_id\" not in data:\n        return jsonify(msg=\"Missing user_id\"), 400\n    user_id = data[\"user_id\"]\n    try:\n        int(user_id)",
+        "detail": "app.routes",
+        "documentation": {}
+    },
+    {
+        "label": "run_migrations_offline",
+        "kind": 2,
+        "importPath": "bot.database.migrations.env",
+        "description": "bot.database.migrations.env",
+        "peekOfCode": "def run_migrations_offline() -> None:\n    \"\"\"Run migrations in 'offline' mode.\n    This configures the context with just a URL\n    and not an Engine, though an Engine is acceptable\n    here as well.  By skipping the Engine creation\n    we don't even need a DBAPI to be available.\n    Calls to context.execute() here emit the given string to the\n    script output.\n    \"\"\"\n    url = config.get_main_option(\"sqlalchemy.url\")",
+        "detail": "bot.database.migrations.env",
+        "documentation": {}
+    },
+    {
+        "label": "run_migrations_online",
+        "kind": 2,
+        "importPath": "bot.database.migrations.env",
+        "description": "bot.database.migrations.env",
+        "peekOfCode": "def run_migrations_online() -> None:\n    \"\"\"Run migrations in 'online' mode.\n    In this scenario we need to create an Engine\n    and associate a connection with the context.\n    \"\"\"\n    connectable = engine_from_config(\n        config.get_section(config.config_ini_section, {}),\n        prefix=\"sqlalchemy.\",\n        poolclass=pool.NullPool,\n    )",
+        "detail": "bot.database.migrations.env",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "kind": 5,
+        "importPath": "bot.database.migrations.env",
+        "description": "bot.database.migrations.env",
+        "peekOfCode": "config = context.config\n# Interpret the config file for Python logging.\n# This line sets up loggers basically.\nif config.config_file_name is not None:\n    fileConfig(config.config_file_name)\n# add your model's MetaData object here\n# for 'autogenerate' support\n# from myapp import mymodel\n# target_metadata = mymodel.Base.metadata\ntarget_metadata = Base.metadata",
+        "detail": "bot.database.migrations.env",
+        "documentation": {}
+    },
+    {
+        "label": "target_metadata",
+        "kind": 5,
+        "importPath": "bot.database.migrations.env",
+        "description": "bot.database.migrations.env",
+        "peekOfCode": "target_metadata = Base.metadata\n# other values from the config, defined by the needs of env.py,\n# can be acquired:\n# my_important_option = config.get_main_option(\"my_important_option\")\n# ... etc.\ndef run_migrations_offline() -> None:\n    \"\"\"Run migrations in 'offline' mode.\n    This configures the context with just a URL\n    and not an Engine, though an Engine is acceptable\n    here as well.  By skipping the Engine creation",
+        "detail": "bot.database.migrations.env",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "kind": 5,
+        "importPath": "bot.database.engine",
+        "description": "bot.database.engine",
+        "peekOfCode": "engine = create_async_engine(DB_LITE, echo=True)\nsession_maker = async_sessionmaker(bind=engine, class_=AsyncSession, expire_on_commit=False)\n# @DeprecationWarning\nasync def create_db():\n    async with engine.begin() as conn:\n        await conn.run_sync(Base.metadata.create_all)\n    # ...\nasync def drop_db():\n    async with engine.begin() as conn:\n        await conn.run_sync(Base.metadata.drop_all)",
+        "detail": "bot.database.engine",
+        "documentation": {}
+    },
+    {
+        "label": "session_maker",
+        "kind": 5,
+        "importPath": "bot.database.engine",
+        "description": "bot.database.engine",
+        "peekOfCode": "session_maker = async_sessionmaker(bind=engine, class_=AsyncSession, expire_on_commit=False)\n# @DeprecationWarning\nasync def create_db():\n    async with engine.begin() as conn:\n        await conn.run_sync(Base.metadata.create_all)\n    # ...\nasync def drop_db():\n    async with engine.begin() as conn:\n        await conn.run_sync(Base.metadata.drop_all)",
+        "detail": "bot.database.engine",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "kind": 6,
+        "importPath": "bot.database.models",
+        "description": "bot.database.models",
+        "peekOfCode": "class Base(DeclarativeBase):\n    pass\nclass User(Base):\n    __tablename__ = 'users'\n    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)\n    user_id: Mapped[int] = mapped_column(BigInteger, nullable=False, unique=True)\n    win_id: Mapped[int] = mapped_column(BigInteger, nullable=True, default=None)\n    is_active: Mapped[bool] = mapped_column(Boolean, nullable=False, default=True)\nclass winUser(Base):\n    __tablename__ = \"win_users\"",
+        "detail": "bot.database.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "bot.database.models",
+        "description": "bot.database.models",
+        "peekOfCode": "class User(Base):\n    __tablename__ = 'users'\n    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)\n    user_id: Mapped[int] = mapped_column(BigInteger, nullable=False, unique=True)\n    win_id: Mapped[int] = mapped_column(BigInteger, nullable=True, default=None)\n    is_active: Mapped[bool] = mapped_column(Boolean, nullable=False, default=True)\nclass winUser(Base):\n    __tablename__ = \"win_users\"\n    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)\n    user_id: Mapped[int] = mapped_column(BigInteger, nullable=False, unique=True)",
+        "detail": "bot.database.models",
+        "documentation": {}
+    },
+    {
+        "label": "winUser",
+        "kind": 6,
+        "importPath": "bot.database.models",
+        "description": "bot.database.models",
+        "peekOfCode": "class winUser(Base):\n    __tablename__ = \"win_users\"\n    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)\n    user_id: Mapped[int] = mapped_column(BigInteger, nullable=False, unique=True)",
+        "detail": "bot.database.models",
+        "documentation": {}
+    },
+    {
+        "label": "routers",
+        "kind": 5,
+        "importPath": "bot.handlers.handlers",
+        "description": "bot.handlers.handlers",
+        "peekOfCode": "routers = [start_router]",
+        "detail": "bot.handlers.handlers",
+        "documentation": {}
+    },
+    {
+        "label": "start_router",
+        "kind": 5,
+        "importPath": "bot.handlers.start_router",
+        "description": "bot.handlers.start_router",
+        "peekOfCode": "start_router = Router()\n@start_router.message(CommandStart())\nasync def start_bot(message: types.Message, session: AsyncSession, state: FSMContext):\n    try:\n        await orm_add_user(session, message.from_user.id)\n    except:\n        pass\n    photo_path = os.path.join(BASE_DIR, \"utils\", \"images\", \"win_id.jpg\")\n    await message.answer_photo(\n        photo=types.FSInputFile(path=photo_path),",
+        "detail": "bot.handlers.start_router",
+        "documentation": {}
+    },
+    {
+        "label": "get_callback_btns",
+        "kind": 2,
+        "importPath": "bot.kbds.inline",
+        "description": "bot.kbds.inline",
+        "peekOfCode": "def get_callback_btns(\n        *,\n        btns: dict[str, str],\n        sizes: tuple[int] = (2,)):\n    keyboard = InlineKeyboardBuilder()\n    for text, data in btns.items():\n        keyboard.add(InlineKeyboardButton(text=text, callback_data=data))\n    return keyboard.adjust(*sizes).as_markup()\ndef get_url_btns(\n        *,",
+        "detail": "bot.kbds.inline",
+        "documentation": {}
+    },
+    {
+        "label": "get_url_btns",
+        "kind": 2,
+        "importPath": "bot.kbds.inline",
+        "description": "bot.kbds.inline",
+        "peekOfCode": "def get_url_btns(\n        *,\n        btns: dict[str, str],\n        sizes: tuple[int] = (2,)):\n    keyboard = InlineKeyboardBuilder()\n    for text, url in btns.items():\n        keyboard.add(InlineKeyboardButton(text=text, url=url))\n    return keyboard.adjust(*sizes).as_markup()\n# Создать микс из CallBack и URL кнопок\ndef get_inlineMix_btns(",
+        "detail": "bot.kbds.inline",
+        "documentation": {}
+    },
+    {
+        "label": "get_inlineMix_btns",
+        "kind": 2,
+        "importPath": "bot.kbds.inline",
+        "description": "bot.kbds.inline",
+        "peekOfCode": "def get_inlineMix_btns(\n        *,\n        btns: dict[str, str],\n        sizes: tuple[int] = (2,)):\n    keyboard = InlineKeyboardBuilder()\n    for text, value in btns.items():\n        if '://' in value:\n            keyboard.add(InlineKeyboardButton(text=text, url=value))\n        else:\n            keyboard.add(InlineKeyboardButton(text=text, callback_data=value))",
+        "detail": "bot.kbds.inline",
+        "documentation": {}
+    },
+    {
+        "label": "get_kb",
+        "kind": 2,
+        "importPath": "bot.kbds.keyboards",
+        "description": "bot.kbds.keyboards",
+        "peekOfCode": "def get_kb(\n        *btns: str,\n        placeholder: str = None,\n        request_contact: int = None,\n        request_location: int = None,\n        sizes: tuple[int] = (2,),\n):\n    \"\"\"\n    Parameters request_contact and request_location must be as indexes of btns args for buttons you need\n    Example:",
+        "detail": "bot.kbds.keyboards",
+        "documentation": {}
+    },
+    {
+        "label": "DataBaseSession",
+        "kind": 6,
+        "importPath": "bot.middlewares.db",
+        "description": "bot.middlewares.db",
+        "peekOfCode": "class DataBaseSession(BaseMiddleware):\n    def __init__(self, session_pool: async_sessionmaker):\n        self.session_pool = session_pool\n    async def __call__(\n        self,\n        handler: Callable[[TelegramObject, Dict[str, Any]], Awaitable[Any]],\n        event: TelegramObject,\n        data: Dict[str, Any],\n    ) -> Any:\n        async with self.session_pool() as session:",
+        "detail": "bot.middlewares.db",
+        "documentation": {}
+    },
+    {
+        "label": "command_list",
+        "kind": 5,
+        "importPath": "bot.utils.bot_commands",
+        "description": "bot.utils.bot_commands",
+        "peekOfCode": "command_list = [\n    BotCommand(command='start', description='Получить сигналы'),\n]",
+        "detail": "bot.utils.bot_commands",
+        "documentation": {}
+    },
+    {
+        "label": "start_buttons",
+        "kind": 5,
+        "importPath": "bot.utils.buttons",
+        "description": "bot.utils.buttons",
+        "peekOfCode": "start_buttons = get_url_btns(\n    btns={\n        \"💻 Зарегистрироваться\": \"https://1wimdx.life/casino/list/4?p=306v\",\n    }\n)",
+        "detail": "bot.utils.buttons",
+        "documentation": {}
+    },
+    {
+        "label": "States",
+        "kind": 6,
+        "importPath": "bot.utils.states",
+        "description": "bot.utils.states",
+        "peekOfCode": "class States(StatesGroup):\n    WIN_REGISTRATION = State()\n    DELAY_SIGNAL = State()",
+        "detail": "bot.utils.states",
+        "documentation": {}
+    },
+    {
+        "label": "start_text",
+        "kind": 5,
+        "importPath": "bot.utils.texts",
+        "description": "bot.utils.texts",
+        "peekOfCode": "start_text = (\n    f\"*Добро пожаловать в ISF Signal🚀*\\n\\n\"\n    f\"🔷 1. Для начала зарегистрируйтесь по ссылке на сайте 1WIN [CLICK](https://1wimdx.life/casino/list/4?p=306v)\\n\"\n    f\"🔷 2. После успешной регистрации cкопируйте ваш айди на сайте (Вкладка 'пополнение' и в правом верхнем углу будет ваш ID).\\n\"\n    f\"🔷 3. И отправьте его боту в ответ на это сообщение!\\n\\n\"\n    f\"`Наш бот основан на нейросети от OpenAI. Он может предугадать расположение звёзд с вероятностью 85%.`\"\n)\nasync def no_reg_text(user_id):\n    return (\n        f\"ID не найден. Пожалуйста, введите ID еще раз:\"",
+        "detail": "bot.utils.texts",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "bot.config",
+        "description": "bot.config",
+        "peekOfCode": "BASE_DIR = os.path.dirname(os.path.abspath(__file__))\nDB_LITE = f\"sqlite+aiosqlite:///{os.path.join(BASE_DIR, '..', 'users.db')}\"\nBOT_TOKEN = os.getenv(\"BOT_TOKEN\")",
+        "detail": "bot.config",
+        "documentation": {}
+    },
+    {
+        "label": "DB_LITE",
+        "kind": 5,
+        "importPath": "bot.config",
+        "description": "bot.config",
+        "peekOfCode": "DB_LITE = f\"sqlite+aiosqlite:///{os.path.join(BASE_DIR, '..', 'users.db')}\"\nBOT_TOKEN = os.getenv(\"BOT_TOKEN\")",
+        "detail": "bot.config",
+        "documentation": {}
+    },
+    {
+        "label": "BOT_TOKEN",
+        "kind": 5,
+        "importPath": "bot.config",
+        "description": "bot.config",
+        "peekOfCode": "BOT_TOKEN = os.getenv(\"BOT_TOKEN\")",
+        "detail": "bot.config",
+        "documentation": {}
+    },
+    {
+        "label": "send_postback",
+        "kind": 2,
+        "importPath": "tests",
+        "description": "tests",
+        "peekOfCode": "def send_postback(user_id=None, endpoint='http://127.0.0.1:5000/postback'):\n    \"\"\"Отправляет POST-запрос на указанный endpoint с данными user_id.\n    Args:\n    user_id (int): ID пользователя.\n    endpoint (str, optional): URL endpoint Flask-приложения. Defaults to 'http://your_flask_app/postback'.\n    \"\"\"\n    data = {'user_id': user_id}\n    response = requests.post(endpoint, json=data)\n    if response.status_code == 200:\n        print(f'User ID {user_id} successfully sent to {endpoint}')",
+        "detail": "tests",
+        "documentation": {}
+    }
+]
